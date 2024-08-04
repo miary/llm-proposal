@@ -1,0 +1,3 @@
+django
+django-bootstrap-static==5.3.3
+django-upload-to==0.3.5
