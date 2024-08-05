@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
   <script defer src="{% static 'fontawesome/js/all.min.js' %}"></script>
   <link href="{% static 'css/boxicons.min.css' %}" rel='stylesheet'>
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch.png' %}"/>
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
 
   <style>
     ::-webkit-scrollbar {
@@ -240,7 +242,8 @@
     </div>
     <!--Container Main start-->
     <div class="height-100 bg-light">
-      <h4>Main Components</h4>
+        {% block content %}
+        {% endblock %}
     </div>
     <!--Container Main end-->
 
