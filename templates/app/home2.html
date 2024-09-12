@@ -1,0 +1,222 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ellumen - AI/ML Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+
+    <!-- Pe-7 icon -->
+    <link href="{% static 'css/pe-icon-7.css' %}" rel="stylesheet" type="text/css" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+
+    <!-- css -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet" type="text/css" />
+
+    <style>
+        .bg-hero-home {
+           background-image: url("{% static 'images/hero-1-bg-img.png' %}");
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark align-items-center">
+        <div class="container">
+            <a class="navbar-brand" href="layout-one-1.html"><img src="{% static 'images/logo-dark.png' %}" alt="" height="26"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i data-feather="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="hero-1-bg bg-light bg-hero-home" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-medium mb-4">Hello,</h1>
+                    <h1 class="hero-1-title fw-normal text-dark mb-4">We Help You To Boost Your Business</h1>
+                    <p class="text-muted mb-4 pb-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequinesciunt.</p>
+                    <a href="#" class="btn btn-primary">Get Started <span class="ms-2 right-icon">&#8594;</span></a>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class=" mt-5 mt-lg-0">
+                        <img src="{% static 'images/hero-img.png' %}" alt="" class="img-fluid d-block mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About us Start -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2>About Us</h2>
+                        <P class="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-3">
+                <div class="col-lg-4">
+                    <h2 class="fw-normal line-height-1_4 mb-4">Productive & Customizable For <span class="fw-medium">Developers</span></h2>
+                    <p class="text-muted mb-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil atque corrupti molestiae.</p>
+                    <p class="f-17 text-muted"><i class="icon-xs text-primary icon-fill-primary icon me-2" data-feather="grid"></i> Marketing program activities</p>
+                    <p class="f-17 text-muted"><i class="icon-xs text-primary icon-fill-primary icon me-2" data-feather="layout"></i> Customization product</p>
+                    <p class="f-17 text-muted mb-4"><i class="icon-xs text-primary icon-fill-primary icon me-2" data-feather="monitor"></i> At vero eos accusamus iusto</p>
+                    <a href="#" class="read-more f-18">More Information <span class="ms-2 right-icon f-24">&#8594;</span></a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <div class="bg-soft-primary about-img rounded">
+                            <img src="{% static 'images/img-1.png' %}" alt="" class="img-fluid d-block mx-auto">
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-uppercase text-muted mb-2 f-13">Development</p>
+                            <h4 class="f-18">Product Development</h4>
+                            <p class="text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni.</p>
+                            <a href="#" class="read-more">Read More <span class="ms-2 right-icon">&#8594;</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <div class="bg-soft-info about-img rounded">
+                            <img src="{% static 'images/img-2.png' %}" alt="" class="img-fluid d-block mx-auto">
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-uppercase text-muted mb-2 f-13">Marketing</p>
+                            <h4 class="f-18">Marketing Product</h4>
+                            <p class="text-muted">Temporibus autem quibusdam a officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
+                            <a href="#" class="read-more">Read More <span class="ms-2 right-icon">&#8594;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us End -->
+
+
+    <!-- Footer Start -->
+    <section class="footer" style="background-image: url(images/hero-1-bg-img.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-5">
+                        <img src="images/logo-light.png" alt="" height="28">
+                        <p class="text-white-50 my-4">Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.</p>
+                        <a href="#" class="text-white-70"><i class="icon me-1" data-feather="instagram"></i> Join Us In Instagram</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Customer</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Works</a></li>
+                                <li><a href="#" class="footer-link">Strategy</a></li>
+                                <li><a href="#" class="footer-link">Releases</a></li>
+                                <li><a href="#" class="footer-link">Press</a></li>
+                                <li><a href="#" class="footer-link">Mission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Product</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Tranding</a></li>
+                                <li><a href="#" class="footer-link">Popular</a></li>
+                                <li><a href="#" class="footer-link">Customers</a></li>
+                                <li><a href="#" class="footer-link">Features</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-white f-22 fw-normal mb-3">Learn More</h4>
+                            <ul class="list-unstyled footer-sub-menu">
+                                <li><a href="#" class="footer-link">Developers</a></li>
+                                <li><a href="#" class="footer-link">Support</a></li>
+                                <li><a href="#" class="footer-link">Customer Service</a></li>
+                                <li><a href="#" class="footer-link">Get Started</a></li>
+                                <li><a href="#" class="footer-link">Guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mt-5">
+                        <p class="text-white-50 f-15 mb-0"><script>document.write(new Date().getFullYear())</script> © Nody. Design By Themesdesign</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+    <!-- javascript -->
+    <script defer src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+    <script defer src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script defer src="{% static 'js/scrollspy.min.js' %}"></script>
+    <script defer src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script defer src="{% static 'js/contact.js' %}"></script>
+
+    <!-- carousel -->
+    <script defer src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- Main Js -->
+    <script defer src="{% static 'js/app.js' %}"></script>
+
+</body>
+</html>
