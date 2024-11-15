@@ -1,0 +1,18 @@
+{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<h3>Business Proposals</h3>
+  <p>
+    Solliciations for 
+    <em>Government</em> proposals.
+  </p>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

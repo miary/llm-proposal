@@ -9,6 +9,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'jazzmin', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -17,6 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap',
     'fontawesome',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'app',
 ]
 
@@ -29,6 +32,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5' 
 
 ROOT_URLCONF = 'src.urls'
 
