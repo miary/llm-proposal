@@ -3,3 +3,5 @@ django-bootstrap-static==5.3.3
 django-crispy-forms==2.3
 crispy-bootstrap5
 django-jazzmin==3.0.1
+whitenoise
+gunicorn
